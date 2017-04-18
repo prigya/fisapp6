@@ -13,8 +13,8 @@
         -->
 
         <property name="brokerURL" value="${activemq.broker.url}"/>
-        <property name="userName" value="${activemq.broker.username:#{null}}"/>
-        <property name="password" value="${activemq.broker.password:#{null}}"/>
+        <property name="userName" value="${activemq.broker.username:theuser}"/>
+        <property name="password" value="${activemq.broker.password:Thepassword1!}"/>
     </bean>
 
     <bean primary="true" id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory" init-method="start" destroy-method="stop">
