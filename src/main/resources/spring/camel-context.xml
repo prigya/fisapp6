@@ -13,6 +13,7 @@
           route is doing.
 
           The amq component ensures to use the broker in the kubernetes cluster.
+          adding a log line
         -->
         <route id="generate-order-route" streamCache="true">
             <from id="route-timer" uri="timer:order?period=3000"/>
